@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f4f8; color: #333; margin: 0; padding: 20px; display: flex; justify-content: center;">
+  <div style="max-width: 800px; width: 100%; background: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); overflow: hidden;">
+    
+    <!-- Personal Information Section -->
+    <div style="text-align: left; padding: 30px;">
+      <img src="picture.jpg" alt="Profile Picture" style="width: 200px; height: 150px; object-fit:contain; margin-bottom: 10px;">
+      <h1 style="margin: 0;">Muhammad Nadeem</h1>
+      <p style="color: #666; font-size: 0.9em;"><b>Email:</b> mnadeemsodha@gmail.com | <b>Phone:</b> 0332-2521574</p>
+      <p style="color: #666; font-size: 0.9em;"><b>Address:</b> Karachi, Pakistan</p>
+    </div>
+
+    <!-- Education Section -->
+    <div style="padding: 20px; border-bottom: 1px solid #e0e0e0; ">
+      <h2 style="font-size: 1.5em; color: #333; border-bottom: 2px solid #007acc; padding-bottom: 5px; margin: 0 0 10px;">Education</h2>
+      <div>
+        <h3 style="font-size: 1.2em; color: #007acc; margin: 0 0 5px;">University of Karachi</h3>
+        <p style="margin: 0;">Bachelor of Commerce</p>
+        
+      </div>
+      <div style="margin-top: 20px;">
+        <h3 style="font-size: 1.2em; color: #007acc; margin: 0 0 5px;">Governer House Karachi</h3>
+        <p style="margin: 0;">Student of GIAIC</p>
+        
+      </div>   
+          
+      </div>
+
+    <!-- Skills Section -->
+    <div style="padding: 20px; border-bottom: 1px solid #e0e0e0;">
+      <h2 style="font-size: 1.5em; color: #333; border-bottom: 2px solid #007acc; padding-bottom: 5px; margin: 0 0 10px;">
+        Skills
+        <button id="toggle-skills" style="font-size: 0.5em; background-color: #007acc; color: white; border: none; border-radius: 4px; padding: 3px 10px; cursor: pointer; margin-left: 10px;">
+          Hide
+        </button>
+      </h2>
+      <ul class="skills-list" style="list-style-type: square; padding-left: 20px; margin: 10px 0;">
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>HTML & CSS</li>
+        <li>Next.js</li>
+      </ul>
+    </div>
+
+    <!-- Work Experience Section -->
+    <div style="padding: 20px;">
+      <h2 style="font-size: 1.5em; color: #333; border-bottom: 2px solid #007acc; padding-bottom: 5px; margin: 0 0 10px;">Work Experience</h2>
+      <div>
+        <h3 style="font-size: 1.2em; color: #007acc; margin: 0 0 5px;">Sr. Manager</h3>
+        <p style="margin: 0;">A Textile Mills</p>
+        <p style="color: #888; font-size: 0.9em; margin: 0;">2004 - todate</p>
+        <p style="margin-top: 10px;">Responsibilities include managing the Finance Department.</p>
+      </div>
+    </div>
+
+  
+
+  <!-- Personal Information Section -->
+  <div style="padding: 20px; border-bottom: 1px solid #e0e0e0;">
+    <h2 style="font-size: 1.5em; color: #333; border-bottom: 2px solid #007acc; padding-bottom: 5px; margin: 0 0 10px;">
+      Personal Information
+    
+    </h2>
+    
+      <p><b>Father's Name:</b> Muhammad Younus</li></p>
+      <p><b>Date of Birth:</b> 17th July, 1971</p>
+      <p><b>Marital Status:</b> Married</p>     
+    
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Inline JavaScript for Interactivity -->
+  <script>
+    // Select the skills list and button elements
+    const skillsList = document.querySelector(".skills-list");
+    const toggleButton = document.getElementById("toggle-skills");
+
+    // Toggle visibility of the skills list
+    toggleButton.addEventListener("click", () => {
+      if (skillsList.style.display === "none") {
+        skillsList.style.display = "block";
+        toggleButton.textContent = "Hide";
+      } else {
+        skillsList.style.display = "none";
+        toggleButton.textContent = "Show";
+      }
+    });
+  </script>
+</body>
+</html>
